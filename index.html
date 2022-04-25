@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Cozy house</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <div class="main-gradient">
+                <div class="header-container">
+                    <header>
+                        <div class="nav-logo">
+                            <h1>Cozy house</h1>
+                            <div>Shelter for pets in Boston</div>
+                        </div>
+                        <div>
+                            <nav class="nav-panel">
+                                <ul class="nav-ul">
+                                    <li class="nav-ul-li active"><a>About the shelter</a></li>
+                                    <li class="nav-ul-li"><a href="#ourpets">Our pets</a></li>
+                                    <li class="nav-ul-li"><a href="#help">Help the shelter</a></li>
+                                    <li class="nav-ul-li"><a href="#contacts">Contacts</a></li>
+                                </ul>
+                            </nav>
+                            <div id="menu-burger">
+                                <input onclick="changeDisplayBurger()" type="checkbox" />
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul id="nav-ul">
+                                    <li class="nav-item active-burger" onclick="closeBurger()"><a href="#begin">About the shelter</a></li>
+                                    <li class="nav-item" onclick="closeBurger()"><a href="#ourpets">Our pets</a></li>
+                                    <li class="nav-item" onclick="closeBurger()"><a href="#help">Help the shelter</a></li>
+                                    <li class="nav-item" onclick="closeBurger()"><a href="#contacts">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="not-only" id="begin">
+                        <div class="not-only-about">
+                            <div class="not-only-about-title">
+                                Not only people need a house
+                            </div>
+                            <div class="not-only-about-text">
+                                We offer to give a chance to a little and nice puppy with an extremely
+                                wide and open heart. He  or she will love you more than anybody else
+                                in the world, you will see!
+                            </div>
+                            <div class="not-only-about-button">
+                                <button>Make a friend</button>
+                            </div>
+                        </div>
+                        <div class="not-only-dog">
+                            <img src="assets/images/start-screen-puppy.png" alt="pic">
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="about">
+                <div class="container">
+                    <div class="about-flex">
+                        <div class="about-img">
+                            <img src="assets/images/about-pets.png" alt="pic">
+                        </div>
+                        <div class="about-info">
+                            <div class="about-info-title">
+                                About the shelter
+                                "Cozy House"
+                            </div>
+                            <div class="about-info-text-1">
+                                Currently we have 121 dogs and 342 cats on our hands and
+                                statistics show that only 20% of them will find a family. The
+                                others will continue to live with us and will be waiting for a lucky
+                                chance to become dearly loved.
+                            </div>
+                            <div class="about-info-text-2">
+                                We feed our wards with the best food and make sure that they
+                                do not get sick, feel comfortable (including psychologically) and
+                                well. We are supported by 87 volunteers and 28 employees of
+                                various skill levels. About 12% of the animals are taken by the
+                                shelter staff. Taking care of the animals, they become attached
+                                to the pets and would hardly ever leave them alone.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-friends" id="ourpets">
+                <div class="container">
+                    <div class="our-friends-pets">
+                        <div class="our-friends-title">
+                            Our friends who
+                            are looking for a house
+                        </div>
+                        <div class="slider">
+                            <button class="button-prev max"></button>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/pets-katrine.png" alt="pic">
+                                        <div>Katrine</div>
+                                        <a href="#popup-1">Learn more</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/pets-jennifer.png" alt="pic">
+                                        <div>Jennifer</div>
+                                        <a href="#popup-2">Learn more</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/pets-woody.png" alt="pic">
+                                        <div>Woody</div>
+                                        <a href="#popup-3">Learn more</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/pets-sophia.png" alt="pic">
+                                        <div>Sophia</div>
+                                        <a href="#popup-4">Learn more</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/pets-timmy.png" alt="pic">
+                                        <div>Timmy</div>
+                                        <a href="#popup-5">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button-next max"></button>
+                            <div class="buttons-min">
+                                <button class="button-prev"></button>
+                                <button class="button-next"></button>
+                            </div>
+                        </div>
+                        <div class="our-friends-btn">
+                            <button><a href="pages/pets/index.html">Get to know the rest</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="help">
+                <div class="help-container">
+                    <div class="help">
+                        <div class="help-title">
+                            How you can help
+                            our shelter
+                        </div>
+                        <div class="help-blocks">
+                            <div class="help-block">
+                                <img src="assets/icons/pet-food.png" alt="pic">
+                                <div class="help-info">Pet food</div>
+                            </div>
+                            <div class="help-block">
+                                <img src="assets/icons/transportation.png" alt="pic">
+                                <div class="help-info">Transportation</div>
+                            </div>
+                            <div class="help-block">
+                                <img src="assets/icons/toys.png" alt="pic">
+                                <div class="help-info">Toys</div>
+                            </div>
+                            <div class="help-block">
+                                <img src="assets/icons/bowls-and-cups.png" alt="pic">
+                                <div class="help-info">Bowls and cups</div>
+                            </div>
+                            <div class="help-block">
+                                <img src="assets/icons/shampoos.png" alt="pic">
+                                <div class="help-info">Shampoos</div>
+                            </div>
+                            <div class="help-block">
+                                <img src="assets/icons/vitamins.png" alt="pic">
+                                <div class="help-info">Vitamins</div>
+                            </div>
+                            <div class="help-block">
+                                <img src="assets/icons/medicines.png" alt="pic">
+                                <div class="help-info">Medicines</div>
+                            </div>
+                            <div class="help-block">
+                                <img src="assets/icons/collars-or-leashes.png" alt="pic">
+                                <div class="help-info">Collars / leashes</div>
+                            </div>
+                            <div class="help-block">
+                                <img src="assets/icons/sleeping-area.png" alt="pic">
+                                <div class="help-info">Sleeping areas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="in-addiction">
+                <div class="container">
+                    <div class="donation">
+                        <img src="assets/images/donation-dog.png" alt="pic">
+                        <div class="donation-info">
+                            <div class="donation-info-title">
+                            You can also make a donation
+                            </div>
+                            <div class="donation-info-bank">
+                                Name of the bank / Type of bank account
+                            </div>
+                            <div class="donation-info-card">
+                                <img src="assets/icons/credit-card.svg" alt="pic">
+                                <a>8380 2880 8028 8791 7435</a>
+                            </div>
+                            <div class="donation-info-info">
+                                Legal information and lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Maecenas a ipsum at
+                                libero sagittis dignissim sed ac diam.
+                                Praesent ultrices maximus tortor et vulputate.
+                                Interdum et malesuada fames ac ante ipsum primis
+                                in faucibus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="foot-container">
+                    <div class="footer-content" id="contacts">
+                            <div class="footer-contact">
+                                <div class="footer-contact-title">
+                                    For questions and suggestions
+                                </div>
+                                <div class="footer-contact-email">
+                                    <img src="assets/icons/mail.png" alt="pic">
+                                    <div><a href="mailto:email@shelter.com">email@shelter.com</a></div>
+                                </div>
+                                <div class="footer-contact-phone">
+                                    <img src="assets/icons/phone.png" alt="pic">
+                                    <div><a href="tel:+136745677554">+13 674 567 75 54</a></div>
+                                </div>
+                            </div>
+                            <div class="footer-address">
+                                <div class="footer-address-title">
+                                    We are waiting
+                                    for your visit
+                                </div>
+                                <div class="footer-address-1">
+                                    <img src="assets/icons/pin.png" alt="pic">
+                                    <div>
+                                        1 Central Street, Boston
+                                        (entrance from the store)
+                                    </div>
+                                </div>
+                                <div class="footer-address-2">
+                                    <img src="assets/icons/pin.png" alt="pic">
+                                    <div>
+                                        18 South Park, London
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-img">
+                                <img src="assets/images/footer-puppy.png" alt="pic">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="popup-1" class="popup">
+        <div class="popup_body">
+            <a href="#ourpets" class="popup_close"><img src="assets/icons/Vector.png"></a>
+            <div class="popup_content">
+                <img src="assets/images/pets-katrine.png" alt="pic">
+                <div class="popup_all">
+                    <div class="popup_title-name">
+                        <div class="popup_title">Katrine</div>
+                        <div class="popup_name">Cat - British Shorthair</div>
+                    </div>
+                    <div class="popup_text">
+                        Scarlett is a happy, playful girl
+                        who will make you laugh and smile.
+                        She forms a bond quickly and will make a
+                        loyal companion and a wonderful family dog
+                        or a good companion for a single individual
+                        too since she likes to hang out and be with her human.
+                    </div>
+                    <ul>
+                        <li><span><b>Age:</b> 6 months</span></li>
+                        <li><span><b>Inoculations:</b> none</span></li>
+                        <li><span><b>Diseases:</b> none</span></li>
+                        <li><span><b>Parasites:</b> none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-2" class="popup">
+        <div class="popup_body">
+            <a href="#ourpets" class="popup_close"><img src="assets/icons/Vector.png"></a>
+            <div class="popup_content">
+                <img src="assets/images/pets-jennifer.png" alt="pic">
+                <div class="popup_all">
+                    <div class="popup_title-name">
+                        <div class="popup_title">Jennifer</div>
+                        <div class="popup_name">Dog - Labrador</div>
+                    </div>
+                    <div class="popup_text">
+                        Jennifer is a sweet 2 months old Labrador
+                        that is patiently waiting to find a new forever home.
+                        This girl really enjoys being able to go outside
+                        to run and play, but won't hesitate to play up
+                        a storm in the house if she has all of her
+                        favorite toys.
+                    </div>
+                    <ul>
+                        <li><span><b>Age:</b> 2 months</span></li>
+                        <li><span><b>Inoculations:</b> none</span></li>
+                        <li><span><b>Diseases:</b> none</span></li>
+                        <li><span><b>Parasites:</b> none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-3" class="popup">
+        <div class="popup_body">
+            <a href="#ourpets" class="popup_close"><img src="assets/icons/Vector.png"></a>
+            <div class="popup_content">
+                <img src="assets/images/pets-woody.png" alt="pic">
+                <div class="popup_all">
+                    <div class="popup_title-name">
+                        <div class="popup_title">Woody</div>
+                        <div class="popup_name">Dog - Golden Retriever</div>
+                    </div>
+                    <div class="popup_text">
+                        Woody is a handsome 3 1/2 year old boy.
+                        Woody does know basic commands and is a smart pup.
+                        Since he is on the stronger side,
+                        he will learn a lot from your training.
+                        Woody will be happier when he finds a new family
+                        that can spend a lot of time with him.
+                    </div>
+                    <ul>
+                        <li><span><b>Age:</b> 3 years  6 months</span></li>
+                        <li><span><b>Inoculations:</b> adenovirus, distemper</span></li>
+                        <li><span><b>Diseases:</b> right back leg mobility reduced</span></li>
+                        <li><span><b>Parasites:</b> none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-4" class="popup">
+        <div class="popup_body">
+            <a href="#ourpets" class="popup_close"><img src="assets/icons/Vector.png"></a>
+            <div class="popup_content">
+                <img src="assets/images/pets-sophia.png" alt="pic">
+                <div class="popup_all">
+                    <div class="popup_title-name">
+                        <div class="popup_title">Sophia</div>
+                        <div class="popup_name">Dog - Shih tzu</div>
+                    </div>
+                    <div class="popup_text">
+                        Sophia here and I'm looking for my forever home
+                        to live out the best years of my life.
+                        I am full of energy. Everyday I'm learning new things,
+                        like how to walk on a leash, go potty outside,
+                        bark and play with toys and
+                        I still need some practice.
+                    </div>
+                    <ul>
+                        <li><span><b>Age:</b> 1 month</span></li>
+                        <li><span><b>Inoculations:</b> parvovirus</span></li>
+                        <li><span><b>Diseases:</b> none</span></li>
+                        <li><span><b>Parasites:</b> none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-5" class="popup">
+        <div class="popup_body">
+            <a href="#ourpets" class="popup_close"><img src="assets/icons/Vector.png"></a>
+            <div class="popup_content">
+                <img src="assets/images/pets-timmy.png" alt="pic">
+                <div class="popup_all">
+                    <div class="popup_title-name">
+                        <div class="popup_title">Timmy</div>
+                        <div class="popup_name">Cat - British Shorthair</div>
+                    </div>
+                    <div class="popup_text">
+                        Timmy is an adorable grey british shorthair male.
+                        He loves to play and snuggle. He is neutered
+                        and up to date on age appropriate vaccinations.
+                        He can be chatty and enjoys being held.
+                        Timmy has a lot to say and wants a person to share
+                        his thoughts with.
+                    </div>
+                    <ul>
+                        <li><span><b>Age:</b> 2 years 3 months</span></li>
+                        <li><span><b>Inoculations:</b> calicivirus, viral rhinotracheitis</span></li>
+                        <li><span><b>Diseases:</b> kidney stones</span></li>
+                        <li><span><b>Parasites:</b> none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
